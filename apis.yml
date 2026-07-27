@@ -1,8 +1,13 @@
 aid: instabridge
 name: instabridge
-description: instabridge is a company surfaced as a portfolio company of balderton-capital, creandum and
-  added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Instabridge is a global internet connectivity company operated by Degoo
+  Backup AB in Stockholm, Sweden, and backed by Balderton Capital and Creandum. Its
+  mobile apps give users access to a crowdsourced map of roughly 20 million free WiFi
+  hotspots and to prepaid eSIM mobile-data plans covering 190+ countries with no roaming
+  fees. With more than 200 million app downloads, Instabridge combines community-shared
+  WiFi, pay-as-you-go global data, a data-saving browser, VPN, and cloud storage,
+  and runs a distribution-partner program for prepaid top-up resellers. It is a consumer
+  app company with no public developer API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/instabridge/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,11 +16,30 @@ x-backed-by:
 - creandum
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+image: https://instabridge.com/wp-content/uploads/2017/01/Instabridge-Feature-EN.png
 tags:
 - Company
+- WiFi
+- eSIM
+- Connectivity
+- Mobile Data
+- Telecommunications
+- Travel
+- VPN
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/instabridge-domain-security.yml
 - type: Website
   url: https://instabridge.com/en/
+- type: Blog
+  url: https://instabridge.com/blog/
+- type: Support
+  url: https://instabridge.com/support/
+- type: Pricing
+  url: https://instabridge.com/mobile-data/
+- type: TermsOfService
+  url: https://instabridge.com/terms-of-service/
+- type: PrivacyPolicy
+  url: https://instabridge.com/privacy-policy/
+- type: Partners
+  url: https://instabridge.com/distribution/
+- type: LLMsTxt
+  url: llms/instabridge-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
